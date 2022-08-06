@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&display=swap");
+
+:root {
+	--primary-color: #e7f6f2;
+	--secondary-color: #a5c9ca;
+	--tertiary-color: #395b64;
+	--quarternary-color: #2c3333;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	color: var(--quarternary-color);
+	background-color: var(--secondary-color);
+}
+
+/* Header */
+header {
+	display: flex;
+	justify-content: center;
+}
+
+/* Main */
+main {
+	margin: 0% 25%;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2rem 3rem;
+	background-color: var(--primary-color);
+	border: 5px solid var(--tertiary-color);
+	border-radius: 1rem;
+}
+
+form > label,
+legend {
+	font-weight: bold;
+}
+
+::placeholder {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+}
+
+form > input {
+	padding: 0.75rem 0.5rem;
+	margin-bottom: 0.5rem;
+	border-radius: 0.25rem;
+	border: none;
+}
+
+form > .radio-container {
+	display: block;
+	margin-bottom: 1rem;
+	border: 2px solid var(--tertiary-color);
+	border-radius: 0.25rem;
+}
+
+.submit-button {
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	background-color: white;
+	border: none;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.submit-button:hover {
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	color: white;
+	background-color: var(--quarternary-color);
+	border: none;
+}
+
+.status-container {
+	margin: 2rem 0;
+	padding: 0 2rem;
+	background-color: var(--primary-color);
+	border: 5px solid var(--tertiary-color);
+	border-radius: 1rem;
+}
+
+.status-container > h1 {
+	font-size: 20px;
+}
+
+#label-form {
+	margin-top: 1rem;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+}
+
+/* Card */
+.dibaca-card {
+	margin: 0 0 1rem 0;
+	padding: 1.5rem 2rem;
+	color: var(--quarternary-color);
+	background-color: var(--secondary-color);
+	border: none;
+	border-radius: 1rem;
+}
+
+.detail-container {
+	padding: 0rem 0rem 1rem 0rem;
+}
+
+.detail-container > h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+.detail-container > p {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+.button-container > button {
+	margin: 0.5rem 0rem;
+	padding: 0.5rem 0.75rem;
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	border: none;
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+.read-button {
+	background-color: lightgreen;
+}
+
+.edit-button {
+	background-color: yellow;
+}
+
+.delete-button {
+	background-color: red;
+}
+
+.material-icons {
+	color: var(--quarternary-color);
+}
+
+/* Footer */
+footer {
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+}
+
+footer > h1 {
+	font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+	main {
+		margin: 0% 10%;
+	}
+}
