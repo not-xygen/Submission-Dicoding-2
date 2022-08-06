@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bookshelf Apps</title>
+		<link rel="stylesheet" href="/css/style.css" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<h1>Bookshelf Apps</h1>
+		</header>
+		<main>
+			<form id="form">
+				<label for="nama-buku">Nama Buku</label>
+				<input
+					type="text"
+					id="nama-buku"
+					placeholder="Masukkan nama buku disini..."
+				/>
+				<label for="nama-penulis">Penulis</label>
+				<input
+					type="text"
+					id="nama-penulis"
+					placeholder="Masukkan nama penulis disini..."
+				/>
+				<label for="tahun-ditulis">Tahun Rilis</label>
+				<input
+					type="number"
+					id="tahun-ditulis"
+					placeholder="Masukkan tahun rilis buku disini..."
+				/>
+				<fieldset class="radio-container" id="radio-container">
+					<legend>Apakah sudah selesai dibaca?</legend>
+					<input
+						title="radio"
+						type="radio"
+						name="apakah-dibaca"
+						value="false"
+					/>
+					<label for="belum">Belum Selesai Dibaca</label>
+					<input
+						title="radio"
+						type="radio"
+						name="apakah-dibaca"
+						value="true"
+					/>
+					<label for="sudah">Selesai Dibaca</label>
+				</fieldset>
+				<input
+					type="button"
+					onclick="submitBook()"
+					value="Submit"
+					class="submit-button"
+				/>
+			</form>
+			<label for="form" id="label-form"></label>
+			<section id="search-container"></section>
+			<div id="buku-container">
+				<section class="status-container">
+					<h1>Selesai Dibaca</h1>
+					<div class="sudah-dibaca-container"></div>
+				</section>
+				<section class="status-container">
+					<h1>Belum Selesai Dibaca</h1>
+					<div class="belum-dibaca-container"></div>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<h1>Made By Dhaffa Agus</h1>
+		</footer>
+		<script src="/js/script.js" defer></script>
+	</body>
+</html>
